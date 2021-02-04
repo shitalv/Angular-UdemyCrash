@@ -1,0 +1,24 @@
+<p>favorite works!</p>
+<!-- <span 
+  class="glyphicon"
+  [class.glyphicon-star]="isFavorite"
+  [class.glyphicon-star-empty]="!isFavorite"
+  (click)="onClick()"
+  ></span> -->
+  <!-- <button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="false"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star" aria-hidden="false"></span> Star
+  </button> -->
+
+<button type="button" class="btn btn" (click)="onClick()" [hidden] = "!isFavorite" >Star</button>
+<button type="button" class="btn btn-dark" [hidden] = "isFavorite" (click)="onClick()">Star</button>
+  <!-- <form class="form-inline my-2 my-lg-0">
+    <div class="input-group">
+      <input class="form-control" type="search" placeholder="Search">
+      <div class="input-group-append">
+        <div class="input-group-text"><i class="fa fa-search"></i></div>
+      </div>
+    </div>
+  </form> -->
